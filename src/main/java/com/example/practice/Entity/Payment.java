@@ -15,9 +15,9 @@ public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @OneToOne
+    @ManyToOne
     private Room room; // 방
-    @OneToOne
+    @ManyToOne
     private Customer customer; //예약자
     private Integer roomPrice; //가격
 

@@ -16,8 +16,8 @@ public class Reservation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     //?? 숙박업소
-    @OneToOne
+    @ManyToOne
     private Room room;
-    @OneToOne
+    @ManyToOne
     private Customer customer;
 }
